@@ -1,0 +1,58 @@
+# Kodi Media Center language file
+# Addon Name: NetSendService
+# Addon id: plugin.service.netsendservice
+# Addon Provider: Pavol Antalik
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# strings 30000 thru 30999 reserved for plugins and plugin settings
+# strings 31000 thru 31999 reserved for skins
+# strings 32000 thru 32999 reserved for scripts
+# strings 33000 thru 33999 reserved for common strings used in add-ons
+
+msgctxt "#30000"
+msgid "General"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Send commands for Movies"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Send commands for TV Shows"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Hostlist"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Command for Lighs On"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Command for Lighs Off"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Group 01"
+msgstr ""
+
+msgctxt "#30120"
+msgid "Group 02"
+msgstr ""
