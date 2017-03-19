@@ -38,14 +38,18 @@ msgid "Send commands for TV Shows"
 msgstr ""
 
 msgctxt "#30004"
-msgid "Hostlist"
+msgid "Send commands for Other"
 msgstr ""
 
 msgctxt "#30005"
-msgid "Command for Lighs On"
+msgid "Hostlist"
 msgstr ""
 
 msgctxt "#30006"
+msgid "Command for Lighs On"
+msgstr ""
+
+msgctxt "#30007"
 msgid "Command for Lighs Off"
 msgstr ""
 
