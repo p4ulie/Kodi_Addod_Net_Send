@@ -29,40 +29,78 @@ class Player_Monitor(xbmc.Player):
 
         xbmc.log("%s: Toggle Group 01: %s" % (addonname, self.enabled_group_01_toggle), level=xbmc.LOGNOTICE)
         xbmc.log("%s: Toggle Group 02: %s" % (addonname, self.enabled_group_02_toggle), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: HTTP Method 01: %s" % (addonname, self.http_method_01), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: HTTP Method 02: %s" % (addonname, self.http_method_02), level=xbmc.LOGNOTICE)
 
         if self.enabled_group_01_toggle == "true":
             if self.url_list_01 != "":
                 url_list = self.url_list_01.split(';')
                 for url in url_list:
-                    xbmc.log("%s: Group 01, sending %s to %s" % (addonname, self.command_on_01, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, data=self.command_on_01)
+                    if self.http_method_01 == "GET":
+                        r = requests.get(url, data=self.command_on_01)
+                        xbmc.log("%s: Group 01, sending GET %s to %s" % (addonname, self.command_on_01, url),
+                                 level=xbmc.LOGNOTICE)
+                    if self.http_method_01 == "POST":
+                        r = requests.post(url, data=self.command_on_01)
+                        xbmc.log("%s: Group 01, sending POST %s to %s" % (addonname, self.command_on_01, url),
+                                 level=xbmc.LOGNOTICE)
+                    if self.http_method_01 == "PUT":
+                        r = requests.put(url, data=self.command_on_01)
+                        xbmc.log("%s: Group 01, sending PUT %s to %s" % (addonname, self.command_on_01, url),
+                                 level=xbmc.LOGNOTICE)
 
         if self.enabled_group_02_toggle == "true":
             if self.url_list_02 != "":
                 url_list = self.url_list_02.split(';')
                 for url in url_list:
                     xbmc.log("%s: Group 02, sending %s to %s" % (addonname, self.command_on_02, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, data=self.command_on_01)
+                    r = requests.put(url, data=self.command_on_02)
+                    if self.http_method_02 == "GET":
+                        r = requests.get(url, data=self.command_on_02)
+                    if self.http_method_02 == "POST":
+                        r = requests.post(url, data=self.command_on_02)
+                    if self.http_method_02 == "PUT":
+                        r = requests.put(url, data=self.command_on_02)
 
 
     def send_command_off(self):
 
         xbmc.log("%s: Toggle Group 01: %s" % (addonname, self.enabled_group_01_toggle), level=xbmc.LOGNOTICE)
         xbmc.log("%s: Toggle Group 02: %s" % (addonname, self.enabled_group_02_toggle), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: HTTP Method 01: %s" % (addonname, self.http_method_01), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: HTTP Method 02: %s" % (addonname, self.http_method_02), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: Toggle Movies: %s" % (addonname, self.active_for_movies_toggle), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: Toggle TV Shows: %s" % (addonname, self.active_for_tvshows_toggle), level=xbmc.LOGNOTICE)
+        xbmc.log("%s: Toggle Other: %s" % (addonname, self.active_for_other_toggle), level=xbmc.LOGNOTICE)
 
         if self.enabled_group_01_toggle == "true":
             if self.url_list_01 != "":
                 url_list = self.url_list_01.split(';')
                 for url in url_list:
-                    xbmc.log("%s: Group 01, sending %s to %s" % (addonname, self.command_off_01, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, data=self.command_off_01)
+                    if self.http_method_01 == "GET":
+                        r = requests.get(url, data=self.command_off_01)
+                        xbmc.log("%s: Group 01, sending GET %s to %s" % (addonname, self.command_off_01, url),
+                                 level=xbmc.LOGNOTICE)
+                    if self.http_method_01 == "POST":
+                        r = requests.post(url, data=self.command_off_01)
+                        xbmc.log("%s: Group 01, sending POST %s to %s" % (addonname, self.command_off_01, url),
+                                 level=xbmc.LOGNOTICE)
+                    if self.http_method_01 == "PUT":
+                        r = requests.put(url, data=self.command_off_01)
+                        xbmc.log("%s: Group 01, sending PUT %s to %s" % (addonname, self.command_off_01, url),
+                                 level=xbmc.LOGNOTICE)
 
         if self.enabled_group_02_toggle == "true":
             if self.url_list_02 != "":
                 url_list = self.url_list_02.split(';')
                 for url in url_list:
                     xbmc.log("%s: Group 02, sending %s to %s" % (addonname, self.command_off_02, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, data=self.command_off_01)
+                    if self.http_method_02 == "GET":
+                        r = requests.get(url, data=self.command_off_02)
+                    if self.http_method_02 == "POST":
+                        r = requests.post(url, data=self.command_off_02)
+                    if self.http_method_02 == "PUT":
+                        r = requests.put(url, data=self.command_off_02)
 
     def onPlayBackStarted(self):
         # turn light switch off
@@ -162,11 +200,13 @@ class Player_Monitor(xbmc.Player):
 
         self.enabled_group_01_toggle = addon.getSetting('enabledGroup01_toggle')
         self.url_list_01 = addon.getSetting('urlList10')
+        self.http_method_01 = addon.getSetting('httpMethod10')
         self.command_on_01 = addon.getSetting('command10On')
         self.command_off_01 = addon.getSetting('command10Off')
 
         self.enabled_group_02_toggle = addon.getSetting('enabledGroup02_toggle')
         self.url_list_02 = addon.getSetting('urlList20')
+        self.http_method_02 = addon.getSetting('httpMethod20')
         self.command_on_02 = addon.getSetting('command20On')
         self.command_off_02 = addon.getSetting('command20Off')
 

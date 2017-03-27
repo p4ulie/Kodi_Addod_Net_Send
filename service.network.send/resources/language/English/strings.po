@@ -53,6 +53,10 @@ msgctxt "#30007"
 msgid "Command for Lighs Off"
 msgstr ""
 
+msgctxt "#30008"
+msgid "HTTP Method"
+msgstr ""
+
 msgctxt "#30110"
 msgid "Group 01"
 msgstr ""
