@@ -35,14 +35,14 @@ class Player_Monitor(xbmc.Player):
                 url_list = self.url_list_01.split(';')
                 for url in url_list:
                     xbmc.log("%s: Group 01, sending %s to %s" % (addonname, self.command_on_01, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, params=self.command_on_01)
+                    r = requests.put(url, data=self.command_on_01)
 
         if self.enabled_group_02_toggle == "true":
             if self.url_list_02 != "":
                 url_list = self.url_list_02.split(';')
                 for url in url_list:
                     xbmc.log("%s: Group 02, sending %s to %s" % (addonname, self.command_on_02, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, params=self.command_on_01)
+                    r = requests.put(url, data=self.command_on_01)
 
 
     def send_command_off(self):
@@ -55,14 +55,14 @@ class Player_Monitor(xbmc.Player):
                 url_list = self.url_list_01.split(';')
                 for url in url_list:
                     xbmc.log("%s: Group 01, sending %s to %s" % (addonname, self.command_off_01, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, params=self.command_on_01)
+                    r = requests.put(url, data=self.command_off_01)
 
         if self.enabled_group_02_toggle == "true":
             if self.url_list_02 != "":
                 url_list = self.url_list_02.split(';')
                 for url in url_list:
                     xbmc.log("%s: Group 02, sending %s to %s" % (addonname, self.command_off_02, url), level=xbmc.LOGNOTICE)
-                    r = requests.put(url, params=self.command_on_01)
+                    r = requests.put(url, data=self.command_off_01)
 
     def onPlayBackStarted(self):
         # turn light switch off
