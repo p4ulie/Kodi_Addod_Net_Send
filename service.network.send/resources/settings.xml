@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="30000">
-        <setting id="enabledGlobal_toggle" type="bool" label="30001" default="false"/>
+        <setting id="enabledGlobal_toggle" type="bool" label="30001" default="true"/>
         <setting id="activeForMovies_toggle" type="bool" label="30002" default="true"/>
         <setting id="activeForTVshows_toggle" type="bool" label="30003" default="true"/>
         <setting id="activeForOther_toggle" type="bool" label="30004" default="false"/>
     </category>
     <category label="30110">
-        <setting id="enabledGroup01_toggle" type="bool" label="30001" default="false"/>
-        <setting id="urlList10" type="text" label="30005" default="http://192.168.1.100:18080/api/devices/34479;http://192.168.1.100:18080/api/devices/39277"/>
-        <setting id="command10On" type="text" label="30006" default="{&quot;brightness&quot;:100}"/>
-        <setting id="command10Off" type="text" label="30007" default="{&quot;decrease&quot;:null}"/>
+        <setting id="enabledGroup01_toggle" type="bool" label="30001" default="true"/>
+        <setting id="urlList10" type="text" label="30005" default="http://192.168.100.100/api/devices/14576;http://192.168.1.100:18080/api/devices/39277"/>
+        <setting id="command10On" type="text" label="30006" default="{&quot;on&quot;:true}"/>
+        <setting id="command10Off" type="text" label="30007" default="{&quot;on&quot;:false}"/>
     </category>
     <category label="30120">
         <setting id="enabledGroup02_toggle" type="bool" label="30001" default="false"/>
