@@ -22,7 +22,7 @@ msgstr ""
 # strings 33000 thru 33999 reserved for common strings used in add-ons
 
 msgctxt "#30000"
-msgid "General"
+msgid "Main"
 msgstr ""
 
 msgctxt "#30001"
@@ -57,10 +57,46 @@ msgctxt "#30008"
 msgid "HTTP Method"
 msgstr ""
 
+msgctxt "#30009"
+msgid "Send commands on Play"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Send commands on Pause"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Send commands on Resume"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Send commands on Stop"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Send commands on End"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Active from time"
+msgstr ""
+
+msgctxt "#30015"
+msgid "Active to time"
+msgstr ""
+
+msgctxt "#30016"
+msgid "Events"
+msgstr ""
+
 msgctxt "#30110"
 msgid "Group 01"
 msgstr ""
 
 msgctxt "#30120"
 msgid "Group 02"
+msgstr ""
+
+msgctxt "#30130"
+msgid "Group 03"
 msgstr ""
