@@ -13,9 +13,6 @@ addonname = addon.getAddonInfo('name')
 class Settings_Monitor(xbmc.Monitor):
     def __init__(self, player):
         self.player = player
-        self.playing_movie = None
-        self.playing_tv_show = None
-        self.playing_other = None
 
     def onSettingsChanged(self):
         self.player.update_settings()
@@ -23,9 +20,9 @@ class Settings_Monitor(xbmc.Monitor):
 class Player_Monitor(xbmc.Player):
     def __init__(self):
         self.update_settings()
-        self.movie_playing = None
-        self.tv_show_playing = None
-        self.other_playing = None
+        self.playing_movie = None
+        self.playing_tv_show = None
+        self.playing_other = None
 
     def send_command_on(self, event):
 
@@ -204,9 +201,9 @@ class Player_Monitor(xbmc.Player):
             self.playing_tv_show = True
             self.playing_other = False
         else:
-            self.movie_playing = False
-            self.tv_show_playing = False
-            self.other_playing = True
+            self.playing_movie = False
+            self.playing_tv_show = False
+            self.playing_other = True
 
     def update_settings(self):
         # update variables
