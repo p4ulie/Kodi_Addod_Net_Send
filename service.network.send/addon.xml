@@ -11,7 +11,7 @@
     <summary lang="en">Send commands to smart appliances over HTTP, on Play, Pause, Resume, Stop</summary>
     <description lang="en">Add-on to send simple plain-text commands over HTTP protocol, to control smart home appliances.
     Tested with http://www.inels.com Smart RF box eLAN-RF-003 in combination with switching socket RFSC-61.
-    Developped for Kodi 17.0 (possibly works on older versions 15-16).
+    Developped for Kodi 15.2 (should work on newer versions 16-17 as well).
     Inspired by add-on http://kodi.wiki/view/Add-on:WeMo_Toggle
     For questions or suggestions please contact me at pavol.antalik@gmail.com</description>
     <disclaimer lang="en">Disclaimer for "NetSendService"</disclaimer>
