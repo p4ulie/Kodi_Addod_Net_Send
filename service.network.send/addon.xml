@@ -8,10 +8,10 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language>en</language>
-    <summary lang="en">Send commands over HTTP on Play, Pause, Resume, Stop</summary>
+    <summary lang="en">Send commands to smart appliances over HTTP, on Play, Pause, Resume, Stop</summary>
     <description lang="en">Add-on to send simple plain-text commands over HTTP protocol, to control smart home appliances.
-    Tested with http://www.inels.com Smart RF box eLAN-RF-003 in combinatino with switching socket RFSC-61.
-    Developped for Kodi 17.0 (possibly works on older versions).
+    Tested with http://www.inels.com Smart RF box eLAN-RF-003 in combination with switching socket RFSC-61.
+    Developped for Kodi 17.0 (possibly works on older versions 15-16).
     Inspired by add-on http://kodi.wiki/view/Add-on:WeMo_Toggle
     For questions or suggestions please contact me at pavol.antalik@gmail.com</description>
     <disclaimer lang="en">Disclaimer for "NetSendService"</disclaimer>
