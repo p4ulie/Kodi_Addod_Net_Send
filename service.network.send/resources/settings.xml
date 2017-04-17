@@ -19,21 +19,21 @@
 
     <category label="30110">
         <setting id="enabledGroup01_toggle" type="bool" label="30001" default="true"/>
-        <setting id="urlList10" type="text" label="30005" default="http://192.168.100.120/api/devices/14576"/>
+        <setting id="urlList10" type="text" label="30005" default="http://192.168.1.2/api/devices/12345"/>
         <setting id="httpMethod10" type="labelenum" label="30008" values="PUT|GET|POST"/>
         <setting id="command10On" type="text" label="30006" default="{&quot;on&quot;:true}"/>
         <setting id="command10Off" type="text" label="30007" default="{&quot;on&quot;:false}"/>
     </category>
     <category label="30120">
         <setting id="enabledGroup02_toggle" type="bool" label="30001" default="false"/>
-        <setting id="urlList20" type="text" label="30005" default="http://192.168.100.121/api/devices/14576;http://192.168.100.122:18080/api/devices/39277"/>
+        <setting id="urlList20" type="text" label="30005" default="http://192.168.1.3/api/devices/12345;http://192.168.1.4:18080/api/devices/12345"/>
         <setting id="httpMethod20" type="labelenum" label="30008" values="PUT|GET|POST"/>
         <setting id="command20On" type="text" label="30006" default=""/>
         <setting id="command20Off" type="text" label="30007" default=""/>
     </category>
     <category label="30130">
         <setting id="enabledGroup03_toggle" type="bool" label="30001" default="false"/>
-        <setting id="urlList30" type="text" label="30005" default="http://192.168.100.121/api/devices/14576;http://192.168.100.122:18080/api/devices/39277"/>
+        <setting id="urlList30" type="text" label="30005" default="http://192.168.1.5/api/devices/12345;http://192.168.1.6:18080/api/devices/12345"/>
         <setting id="httpMethod30" type="labelenum" label="30008" values="PUT|GET|POST"/>
         <setting id="command30On" type="text" label="30006" default=""/>
         <setting id="command30Off" type="text" label="30007" default=""/>
